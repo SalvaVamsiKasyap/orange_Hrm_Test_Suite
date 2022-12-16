@@ -1,0 +1,16 @@
+2022-12-16 16:07:01,436 :INFO :test_edituser :Entering the username..
+2022-12-16 16:07:01,590 :INFO :test_edituser :Entered user name as Admin.
+2022-12-16 16:07:01,622 :INFO :test_edituser :Entering the password
+2022-12-16 16:07:01,839 :INFO :test_edituser :Entered the password..
+2022-12-16 16:07:04,168 :INFO :test_edituser :Clicking on PIM Module..
+2022-12-16 16:07:05,683 :INFO :test_edituser :Successfully Clicked PIM Module
+2022-12-16 16:07:07,358 :INFO :test_edituser :Clicking on edit button..
+2022-12-16 16:07:08,658 :INFO :test_edituser :Successfully clicked edit button
+2022-12-16 16:07:09,791 :INFO :test_edituser :Entered the first name as a part of editing..
+2022-12-16 16:07:09,919 :INFO :test_edituser :Entering the middle name as a part of editing..
+2022-12-16 16:07:10,237 :INFO :test_edituser :Entered the middlename name as a part of editing..
+2022-12-16 16:07:10,368 :INFO :test_edituser :Entering the last name as a part of editing..
+2022-12-16 16:07:10,823 :INFO :test_edituser :Entered the last name as a part of editing..
+2022-12-16 16:07:10,948 :INFO :test_edituser :Entering the employee id as a part of editing..
+2022-12-16 16:07:11,246 :INFO :test_edituser :Entered the employee id as a part of editing..
+2022-12-16 16:07:18,039 :INFO :test_edituser :Successfully Saved
