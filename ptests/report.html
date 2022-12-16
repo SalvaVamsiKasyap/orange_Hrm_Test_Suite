@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 16-Dec-2022 at 16:14:47 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 16-Dec-2022 at 16:47:17 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -272,8 +272,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.5</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 14.01 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>5 tests ran in 66.76 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -287,16 +287,82 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_orange_hrm.py::Testorange_hrm_delte_user_in_pim::test_deleteuser</td>
-          <td class="col-duration">13.94</td>
+          <td class="col-name">test_orange_hrm.py::Testorange_hrm::test_successfullogin</td>
+          <td class="col-duration">8.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_deleteuser:test_orange_hrm.py:175 Entering the username..
-INFO     test_deleteuser:test_orange_hrm.py:177 Entered user name as Admin.
-INFO     test_deleteuser:test_orange_hrm.py:179 Entering the password
-INFO     test_deleteuser:test_orange_hrm.py:181 Entered the password..
-INFO     test_deleteuser:test_orange_hrm.py:185 Clicking on PIM Module..
-INFO     test_deleteuser:test_orange_hrm.py:187 Successfully Clicked PIM Module
-INFO     test_deleteuser:test_orange_hrm.py:189 Clicking on delete icon..
-INFO     test_deleteuser:test_orange_hrm.py:192 Successfully Deleted<br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_successfullogin:test_orange_hrm.py:23 Entering the username..
+INFO     test_successfullogin:test_orange_hrm.py:25 Entered user name as Admin.
+INFO     test_successfullogin:test_orange_hrm.py:27 Entering the password
+INFO     test_successfullogin:test_orange_hrm.py:29 Entered the password..
+INFO     test_successfullogin:test_orange_hrm.py:33 Navigating to the homepage..
+INFO     test_successfullogin:test_orange_hrm.py:35 Successfully Navigated to home page...<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_orange_hrm.py::Testorange_hrm_unsuccessful::test_unsuccessfullogin</td>
+          <td class="col-duration">9.35</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_unsuccessfullogin:test_orange_hrm.py:51 Entering the username..
+INFO     test_unsuccessfullogin:test_orange_hrm.py:53 Entered user name as Admin.
+INFO     test_unsuccessfullogin:test_orange_hrm.py:55 Entering the password
+INFO     test_unsuccessfullogin:test_orange_hrm.py:57 Entered the password..
+INFO     test_unsuccessfullogin:test_orange_hrm.py:60 Invalid credentials<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_orange_hrm.py::Testorange_hrm_add_user_in_pim::test_adduser</td>
+          <td class="col-duration">11.59</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_adduser:test_orange_hrm.py:75 Entering the username..
+INFO     test_adduser:test_orange_hrm.py:77 Entered user name as Admin.
+INFO     test_adduser:test_orange_hrm.py:79 Entering the password
+INFO     test_adduser:test_orange_hrm.py:81 Entered the password..
+INFO     test_adduser:test_orange_hrm.py:85 Clicking on PIM Module..
+INFO     test_adduser:test_orange_hrm.py:89 Entered the PIM Module page
+INFO     test_adduser:test_orange_hrm.py:105 Successfully Saved<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_orange_hrm.py::Testorange_hrm_edit_user_in_pim::test_edituser</td>
+          <td class="col-duration">19.50</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_edituser:test_orange_hrm.py:119 Entering the username..
+INFO     test_edituser:test_orange_hrm.py:121 Entered user name as Admin.
+INFO     test_edituser:test_orange_hrm.py:123 Entering the password
+INFO     test_edituser:test_orange_hrm.py:125 Entered the password..
+INFO     test_edituser:test_orange_hrm.py:129 Clicking on PIM Module..
+INFO     test_edituser:test_orange_hrm.py:131 Successfully Clicked PIM Module
+INFO     test_edituser:test_orange_hrm.py:134 Clicking on edit button..
+INFO     test_edituser:test_orange_hrm.py:136 Successfully clicked edit button
+INFO     test_edituser:test_orange_hrm.py:141 Entered the first name as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:144 Entering the middle name as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:147 Entered the middlename name as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:150 Entering the last name as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:153 Entered the last name as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:156 Entering the employee id as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:159 Entered the employee id as a part of editing..
+INFO     test_edituser:test_orange_hrm.py:162 Successfully Saved<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_orange_hrm.py::Testorange_hrm_delte_user_in_pim::test_deleteuser</td>
+          <td class="col-duration">17.95</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_deleteuser:test_orange_hrm.py:178 Entering the username..
+INFO     test_deleteuser:test_orange_hrm.py:180 Entered user name as Admin.
+INFO     test_deleteuser:test_orange_hrm.py:182 Entering the password
+INFO     test_deleteuser:test_orange_hrm.py:184 Entered the password..
+INFO     test_deleteuser:test_orange_hrm.py:188 Clicking on PIM Module..
+INFO     test_deleteuser:test_orange_hrm.py:190 Successfully Clicked PIM Module
+INFO     test_deleteuser:test_orange_hrm.py:192 Clicking on delete icon..
+INFO     test_deleteuser:test_orange_hrm.py:195 Successfully Deleted<br/></div></td></tr></tbody></table></body></html>

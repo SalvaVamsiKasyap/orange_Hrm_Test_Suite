@@ -1,0 +1,8 @@
+2022-12-16 16:47:05,790 :INFO :test_deleteuser :Entering the username..
+2022-12-16 16:47:05,932 :INFO :test_deleteuser :Entered user name as Admin.
+2022-12-16 16:47:05,951 :INFO :test_deleteuser :Entering the password
+2022-12-16 16:47:06,063 :INFO :test_deleteuser :Entered the password..
+2022-12-16 16:47:08,186 :INFO :test_deleteuser :Clicking on PIM Module..
+2022-12-16 16:47:09,580 :INFO :test_deleteuser :Successfully Clicked PIM Module
+2022-12-16 16:47:09,580 :INFO :test_deleteuser :Clicking on delete icon..
+2022-12-16 16:47:17,469 :INFO :test_deleteuser :Successfully Deleted
