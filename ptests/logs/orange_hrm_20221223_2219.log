@@ -1,0 +1,6 @@
+2022-12-23 22:19:07,760 :INFO :test_adminusermanagmentoption :Entering the username..
+2022-12-23 22:19:08,050 :INFO :test_adminusermanagmentoption :Entered user name as Admin.
+2022-12-23 22:19:08,090 :INFO :test_adminusermanagmentoption :Entering the password
+2022-12-23 22:19:08,337 :INFO :test_adminusermanagmentoption :Entered the password..
+2022-12-23 22:19:10,276 :INFO :test_adminusermanagmentoption :Clicking on admin module..
+2022-12-23 22:19:11,570 :INFO :test_adminusermanagmentoption :Successfully clicked on admin module

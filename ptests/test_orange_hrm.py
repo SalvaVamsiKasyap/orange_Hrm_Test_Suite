@@ -6,6 +6,7 @@ from selenium.webdriver import ActionChains, Keys
 from pageObjects.login_Page import login_Page
 from pageObjects.home_Page import home_Page
 from pageObjects.pim_Module_Page import pim_Module_Page
+from pageObjects.admin_Module_Page import admin_Module_Page
 from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
 
@@ -196,6 +197,64 @@ class Testorange_hrm_delte_user_in_pim(BaseClass):
         assert self.verify_element_presence('//p[text()="Successfully Deleted"]') == desired_Message
 
 
+
+@pytest.mark.usefixtures('setup')
+class Testorange_hrm_admin_page_menu_options_search(BaseClass):
+
+    def test_adminoptionssearch(self):
+
+        desired_Message = ""
+        log = self.get_logger()
+        ohlp = login_Page(self.driver)
+        self.verify_element_presence('//input[@name="username"]')
+        username_inp = ohlp.enter_user_name()
+        log.info("Entering the username..")
+        username_inp.send_keys('Admin')
+        log.info("Entered user name as Admin.")
+        userpassword_inp = ohlp.enter_user_password()
+        log.info("Entering the password")
+        userpassword_inp.send_keys('admin123')
+        log.info("Entered the password..")
+        userpassword_inp.send_keys(Keys.ENTER)
+        hmp = home_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/admin/viewAdminModule"]')
+        log.info("Clicking on admin module..")
+        hmp.selecting_Admin_Module()
+        log.info("Successfully clicked on admin module")
+        ohap = admin_Module_Page(self.driver)
+        self.verify_element_presence("//ul[@class='oxd-main-menu']/li/a/span")
+        options_To_Check = ohap.verifying_admin_options()
+        log.info(f"User is able to search all {ohap.searching_The_Options(options_To_Check)} options")
+
+
+
+@pytest.mark.usefixtures('setup')
+class Testorange_hrm_admin_page_user_managment(BaseClass):
+
+    def test_adminusermanagmentoption(self):
+
+        desired_Message = ""
+        log = self.get_logger()
+        ohlp = login_Page(self.driver)
+        self.verify_element_presence('//input[@name="username"]')
+        username_inp = ohlp.enter_user_name()
+        log.info("Entering the username..")
+        username_inp.send_keys('Admin')
+        log.info("Entered user name as Admin.")
+        userpassword_inp = ohlp.enter_user_password()
+        log.info("Entering the password")
+        userpassword_inp.send_keys('admin123')
+        log.info("Entered the password..")
+        userpassword_inp.send_keys(Keys.ENTER)
+        hmp = home_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/admin/viewAdminModule"]')
+        log.info("Clicking on admin module..")
+        hmp.selecting_Admin_Module()
+        log.info("Successfully clicked on admin module")
+        ohap = admin_Module_Page(self.driver)
+        self.verify_element_presence("//ul[@class='oxd-main-menu']/li/a/span")
+        options_To_Check = ohap.verifying_admin_options()
+        log.info(ohap.clicking_on_usermanagment())
 
 
 
