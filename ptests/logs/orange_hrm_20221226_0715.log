@@ -1,0 +1,7 @@
+2022-12-26 07:15:09,633 :INFO :test_adminoptionssearch :Entering the username..
+2022-12-26 07:15:09,809 :INFO :test_adminoptionssearch :Entered user name as Admin.
+2022-12-26 07:15:09,829 :INFO :test_adminoptionssearch :Entering the password
+2022-12-26 07:15:09,980 :INFO :test_adminoptionssearch :Entered the password..
+2022-12-26 07:15:12,275 :INFO :test_adminoptionssearch :Clicking on admin module..
+2022-12-26 07:15:13,855 :INFO :test_adminoptionssearch :Successfully clicked on admin module
+2022-12-26 07:15:18,745 :INFO :test_adminoptionssearch :User is able to search all 11 options
