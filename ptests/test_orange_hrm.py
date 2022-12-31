@@ -9,7 +9,6 @@ from pageObjects.pim_Module_Page import pim_Module_Page
 from pageObjects.admin_Module_Page import admin_Module_Page
 from selenium.webdriver.common.by import By
 from utilities.BaseClass import BaseClass
-
 @pytest.mark.usefixtures("setup")
 class Testorange_hrm(BaseClass):
 
@@ -255,6 +254,140 @@ class Testorange_hrm_admin_page_user_managment(BaseClass):
         self.verify_element_presence("//ul[@class='oxd-main-menu']/li/a/span")
         options_To_Check = ohap.verifying_admin_options()
         log.info(ohap.clicking_on_usermanagment())
+
+    def test_admincreateemployeepim(self):
+
+        desired_Message = "Successfully Saved"
+        log = self.get_logger()
+        ohlp = login_Page(self.driver)
+        self.verify_element_presence('//input[@name="username"]')
+        username_inp = ohlp.enter_user_name()
+        log.info("Entering the username..")
+        username_inp.send_keys('Admin')
+        log.info("Entered user name as Admin.")
+        userpassword_inp = ohlp.enter_user_password()
+        log.info("Entering the password")
+        userpassword_inp.send_keys('admin123')
+        log.info("Entered the password..")
+        userpassword_inp.send_keys(Keys.ENTER)
+        hmp = home_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/admin/viewAdminModule"]')
+        log.info("Clicking on admin module..")
+        hmp.selecting_Admin_Module()
+        log.info("Successfully clicked on admin module")
+        #ohap = admin_Module_Page(self.driver)
+        #self.verify_element_presence("//ul[@class='oxd-main-menu']/li/a/span")
+        #options_To_Check = ohap.verifying_admin_options()
+        #log.info(ohap.clicking_on_usermanagment())
+        ohap = admin_Module_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/pim/viewPimModule"]')
+        ohap.clicking_pimoption()
+        ohap.verifying_admin_options()
+        self.verify_element_presence("//div[@class='orangehrm-header-container']/button")
+        ohap.clicking_addoption()
+        self.verify_element_presence("//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+        ohap.clicking_toggleoption()
+        result = ohap.providing_details()
+        assert self.verify_element_presence('//p[text()="Successfully Saved"]') == desired_Message
+        self.verify_element_presence(f'//h6[text()="{result}"]')
+        self.driver.save_screenshot("image.png")
+        return result
+
+
+
+#//a[text()='Memberships']
+@pytest.mark.usefixtures('setup')
+class Testorange_hrm_pim_page_emp_details_validation(BaseClass):
+    def test_validateemppersonaldetails(self):
+        desired_Message = "Successfully Saved"
+        log = self.get_logger()
+        ohlp = login_Page(self.driver)
+        self.verify_element_presence('//input[@name="username"]')
+        username_inp = ohlp.enter_user_name()
+        log.info("Entering the username..")
+        username_inp.send_keys('Admin')
+        log.info("Entered user name as Admin.")
+        userpassword_inp = ohlp.enter_user_password()
+        log.info("Entering the password")
+        userpassword_inp.send_keys('admin123')
+        log.info("Entered the password..")
+        userpassword_inp.send_keys(Keys.ENTER)
+        hmp = home_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/admin/viewAdminModule"]')
+        log.info("Clicking on admin module..")
+        hmp.selecting_Admin_Module()
+        log.info("Successfully clicked on admin module")
+        # ohap = admin_Module_Page(self.driver)
+        # self.verify_element_presence("//ul[@class='oxd-main-menu']/li/a/span")
+        # options_To_Check = ohap.verifying_admin_options()
+        # log.info(ohap.clicking_on_usermanagment())
+        ohap = admin_Module_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/pim/viewPimModule"]')
+        ohap.clicking_pimoption()
+        ohap.verifying_admin_options()
+        self.verify_element_presence("//div[@class='orangehrm-header-container']/button")
+        ohap.clicking_addoption()
+        self.verify_element_presence("//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+        ohap.clicking_toggleoption()
+        result = ohap.providing_details()
+        assert self.verify_element_presence('//p[text()="Successfully Saved"]') == desired_Message
+        self.verify_element_presence(f'//h6[text()="{result}"]')
+        self.driver.save_screenshot("image.png")
+        ohpp = pim_Module_Page(self.driver)
+        emp_options = ['Personal Details', 'Contact Details', 'Emergency Contacts', 'Dependents', 'Immigration', 'Job', 'Salary', 'Tax Exemptions', 'Report-to', 'Qualifications', 'Memberships']
+        assert emp_options == ohpp.validating_emp_personal_details()
+
+
+@pytest.mark.usefixtures('setup')
+class Testorange_hrm_pim_page_emp_personal_details_updation(BaseClass):
+    def test_updateemppersonaldetails(self):
+        desired_Message = "Successfully Saved"
+        log = self.get_logger()
+        ohlp = login_Page(self.driver)
+        self.verify_element_presence('//input[@name="username"]')
+        username_inp = ohlp.enter_user_name()
+        log.info("Entering the username..")
+        username_inp.send_keys('Admin')
+        log.info("Entered user name as Admin.")
+        userpassword_inp = ohlp.enter_user_password()
+        log.info("Entering the password")
+        userpassword_inp.send_keys('admin123')
+        log.info("Entered the password..")
+        userpassword_inp.send_keys(Keys.ENTER)
+        hmp = home_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/admin/viewAdminModule"]')
+        log.info("Clicking on admin module..")
+        hmp.selecting_Admin_Module()
+        log.info("Successfully clicked on admin module")
+        # ohap = admin_Module_Page(self.driver)
+        # self.verify_element_presence("//ul[@class='oxd-main-menu']/li/a/span")
+        # options_To_Check = ohap.verifying_admin_options()
+        # log.info(ohap.clicking_on_usermanagment())
+        ohap = admin_Module_Page(self.driver)
+        self.verify_element_presence('//a[@href="/web/index.php/pim/viewPimModule"]')
+        ohap.clicking_pimoption()
+        ohap.verifying_admin_options()
+        self.verify_element_presence("//div[@class='orangehrm-header-container']/button")
+        ohap.clicking_addoption()
+        self.verify_element_presence("//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
+        ohap.clicking_toggleoption()
+        result = ohap.providing_details()
+        assert self.verify_element_presence('//p[text()="Successfully Saved"]') == desired_Message
+        self.verify_element_presence(f'//h6[text()="{result}"]')
+        self.driver.save_screenshot("image.png")
+        ohpp = pim_Module_Page(self.driver)
+        emp_options = ['Personal Details', 'Contact Details', 'Emergency Contacts', 'Dependents', 'Immigration', 'Job', 'Salary', 'Tax Exemptions', 'Report-to', 'Qualifications', 'Memberships']
+        assert emp_options == ohpp.validating_emp_personal_details()
+        ohpp.updating_personal_details()
+        assert self.verify_element_presence('//p[text()="Successfully Saved"]') == desired_Message
+        self.driver.save_screenshot("personal_details.png")
+        time.sleep(10)
+
+
+
+
+
+
 
 
 

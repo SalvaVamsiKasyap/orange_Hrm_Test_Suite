@@ -1,0 +1,7 @@
+2022-12-28 00:14:47,498 :INFO :test_admincreateemployeepim :Entering the username..
+2022-12-28 00:14:47,606 :INFO :test_admincreateemployeepim :Entered user name as Admin.
+2022-12-28 00:14:47,628 :INFO :test_admincreateemployeepim :Entering the password
+2022-12-28 00:14:47,757 :INFO :test_admincreateemployeepim :Entered the password..
+2022-12-28 00:14:50,160 :INFO :test_admincreateemployeepim :Clicking on admin module..
+2022-12-28 00:14:51,408 :INFO :test_admincreateemployeepim :Successfully clicked on admin module
+2022-12-28 00:14:56,249 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="ed7c2a6f394b1786a63e489b5221d2cf", element="55db613d-7b77-40e4-9a71-5173f470f23d")>

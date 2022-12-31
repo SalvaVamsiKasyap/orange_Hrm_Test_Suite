@@ -1,0 +1,6 @@
+2022-12-31 00:43:54,370 :INFO :test_updateemppersonaldetails :Entering the username..
+2022-12-31 00:43:54,460 :INFO :test_updateemppersonaldetails :Entered user name as Admin.
+2022-12-31 00:43:54,478 :INFO :test_updateemppersonaldetails :Entering the password
+2022-12-31 00:43:54,590 :INFO :test_updateemppersonaldetails :Entered the password..
+2022-12-31 00:43:56,741 :INFO :test_updateemppersonaldetails :Clicking on admin module..
+2022-12-31 00:43:58,306 :INFO :test_updateemppersonaldetails :Successfully clicked on admin module

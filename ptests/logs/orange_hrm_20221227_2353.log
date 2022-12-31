@@ -1,0 +1,6 @@
+2022-12-27 23:53:44,925 :INFO :test_admincreateemployeepim :Entering the username..
+2022-12-27 23:53:45,037 :INFO :test_admincreateemployeepim :Entered user name as Admin.
+2022-12-27 23:53:45,054 :INFO :test_admincreateemployeepim :Entering the password
+2022-12-27 23:53:45,226 :INFO :test_admincreateemployeepim :Entered the password..
+2022-12-27 23:53:47,891 :INFO :test_admincreateemployeepim :Clicking on admin module..
+2022-12-27 23:53:49,237 :INFO :test_admincreateemployeepim :Successfully clicked on admin module

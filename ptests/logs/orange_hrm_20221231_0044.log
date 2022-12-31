@@ -1,0 +1,5 @@
+2022-12-31 00:44:02,685 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="92822ef797f6bc4d697501006d5f6364", element="ee21d0ad-d9e3-436a-8cc0-59c7f66bff8d")>
+2022-12-31 00:44:11,067 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="92822ef797f6bc4d697501006d5f6364", element="1d89b3d4-6841-4a9c-afaf-b9bba568e5b6")>
+2022-12-31 00:44:13,566 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="92822ef797f6bc4d697501006d5f6364", element="5c9cfcd1-f3e4-494e-adb2-4cec8dcbd7b0")>
+2022-12-31 00:44:13,691 :INFO :providing_details :[<selenium.webdriver.remote.webelement.WebElement (session="92822ef797f6bc4d697501006d5f6364", element="25631c79-10ab-4f5d-8493-a58c364deb3f")>, <selenium.webdriver.remote.webelement.WebElement (session="92822ef797f6bc4d697501006d5f6364", element="53bb1666-e593-407f-a8b1-a493d937b680")>]
+2022-12-31 00:44:14,069 :INFO :providing_details :None

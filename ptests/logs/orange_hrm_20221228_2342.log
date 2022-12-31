@@ -1,0 +1,11 @@
+2022-12-28 23:42:18,847 :INFO :test_validateemppersonaldetails :Entering the username..
+2022-12-28 23:42:18,926 :INFO :test_validateemppersonaldetails :Entered user name as Admin.
+2022-12-28 23:42:18,941 :INFO :test_validateemppersonaldetails :Entering the password
+2022-12-28 23:42:19,020 :INFO :test_validateemppersonaldetails :Entered the password..
+2022-12-28 23:42:20,870 :INFO :test_validateemppersonaldetails :Clicking on admin module..
+2022-12-28 23:42:21,934 :INFO :test_validateemppersonaldetails :Successfully clicked on admin module
+2022-12-28 23:42:25,852 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="d552c33bc50e577785841596743c1177", element="62976616-b90e-431e-9ac9-db136e0e6a2f")>
+2022-12-28 23:42:31,639 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="d552c33bc50e577785841596743c1177", element="7fb1b65c-d863-443d-8d5a-c29eb3b556b5")>
+2022-12-28 23:42:35,126 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="d552c33bc50e577785841596743c1177", element="b1504ab9-a268-4b65-9f3c-f29eb6b4888b")>
+2022-12-28 23:42:35,236 :INFO :providing_details :[<selenium.webdriver.remote.webelement.WebElement (session="d552c33bc50e577785841596743c1177", element="b3fbb341-df7a-4c8e-bbb0-e65b63967687")>, <selenium.webdriver.remote.webelement.WebElement (session="d552c33bc50e577785841596743c1177", element="edddd3aa-3136-45cf-8db3-9816b698ba09")>]
+2022-12-28 23:42:35,472 :INFO :providing_details :None

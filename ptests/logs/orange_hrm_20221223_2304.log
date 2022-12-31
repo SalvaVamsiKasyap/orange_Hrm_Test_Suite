@@ -1,7 +1,0 @@
-2022-12-23 23:04:37,383 :INFO :test_adminusermanagmentoption :Entering the username..
-2022-12-23 23:04:37,437 :INFO :test_adminusermanagmentoption :Entered user name as Admin.
-2022-12-23 23:04:37,447 :INFO :test_adminusermanagmentoption :Entering the password
-2022-12-23 23:04:37,526 :INFO :test_adminusermanagmentoption :Entered the password..
-2022-12-23 23:04:39,378 :INFO :test_adminusermanagmentoption :Clicking on admin module..
-2022-12-23 23:04:40,551 :INFO :test_adminusermanagmentoption :Successfully clicked on admin module
-2022-12-23 23:04:44,313 :INFO :test_adminusermanagmentoption :Admin : Enabled and ESS : Disabled

@@ -1,0 +1,11 @@
+2022-12-28 22:47:48,546 :INFO :test_admincreateemployeepim :Entering the username..
+2022-12-28 22:47:48,711 :INFO :test_admincreateemployeepim :Entered user name as Admin.
+2022-12-28 22:47:48,726 :INFO :test_admincreateemployeepim :Entering the password
+2022-12-28 22:47:48,848 :INFO :test_admincreateemployeepim :Entered the password..
+2022-12-28 22:47:50,658 :INFO :test_admincreateemployeepim :Clicking on admin module..
+2022-12-28 22:47:51,863 :INFO :test_admincreateemployeepim :Successfully clicked on admin module
+2022-12-28 22:47:55,992 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="d12ddf26ea52e911890aa17e0c9da895", element="80003a93-6d2b-4b94-8ff9-154c637c4aa8")>
+2022-12-28 22:48:04,143 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="d12ddf26ea52e911890aa17e0c9da895", element="dfb44150-eeec-4514-b178-398850057399")>
+2022-12-28 22:48:07,249 :INFO :providing_details :<selenium.webdriver.remote.webelement.WebElement (session="d12ddf26ea52e911890aa17e0c9da895", element="b7a9d046-5e83-47a5-8827-9de6dbc591fe")>
+2022-12-28 22:48:07,349 :INFO :providing_details :[<selenium.webdriver.remote.webelement.WebElement (session="d12ddf26ea52e911890aa17e0c9da895", element="b1d85efa-aa4e-4688-98cc-e18ab890e7df")>, <selenium.webdriver.remote.webelement.WebElement (session="d12ddf26ea52e911890aa17e0c9da895", element="efbadc37-165d-46e8-bb74-181c182ab738")>]
+2022-12-28 22:48:07,558 :INFO :providing_details :None
